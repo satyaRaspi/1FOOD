@@ -1,0 +1,16 @@
+Truflux FoodFlow v1.1.15 - Windows Quick Start
+
+1. Extract ZIP to C:\1food
+2. Double-click start_app_windows.bat
+3. Open http://localhost:8000/
+
+Use the landing page to choose Mobile App, Cashier POS, Kiosk, or Admin.
+The landing page enforces a fresh mobile + OTP login for each selected demo mode.
+
+Demo Login:
+Mobile: 9999999999
+OTP: 123456
+
+This build runs on port 8000 only. It does not use Node, npm, Vite, or port 5173.
+
+Delivery / Pickup: http://localhost:8000/delivery

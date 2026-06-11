@@ -99,3 +99,21 @@ Added a dedicated Delivery / Pickup page:
 - Already fulfilled orders cannot be fulfilled again.
 
 Landing page now includes: Mobile App, Cashier POS, Kiosk, Delivery / Pickup, and Admin Configuration.
+
+## Railway Port Fix — v1.1.17
+
+This build uses `python -m app.serve` for Railway startup. The server reads Railway's dynamic `PORT` environment variable inside Python and converts it to an integer before starting Uvicorn.
+
+Use this Railway start command:
+
+```bash
+python -m app.serve
+```
+
+Do not use:
+
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port $PORT
+```
+
+Some Railway/Docker configurations pass `$PORT` literally instead of expanding it, which causes the error: `$PORT is not a valid integer`.

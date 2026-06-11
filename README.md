@@ -1,3 +1,22 @@
+# Truflux FoodFlow v1.1.18 - Home Button + Print Done Build
+
+Updates in this build:
+- Added a global Home button across all application pages.
+- Added a Done button on the print receipt screen.
+- Retains Railway port fix using `python -m app.serve`.
+
+Run on Windows:
+```bat
+cd C:\1food
+start_app_windows.bat
+```
+
+Open: http://localhost:8000/
+
+Login: Mobile `9999999999`, OTP `123456`.
+
+Railway start command: `python -m app.serve`
+
 # Truflux FoodFlow v1.1.16 — Login-Enforced Landing + Mobile Menu Pagination Build
 
 This build is optimized for Windows demo use and runs only on the Python/FastAPI server at port 8000. It does not require Node, npm, Vite, or port 5173.
